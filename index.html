@@ -805,7 +805,6 @@
     <li><a href="#" onclick="showPage('services'); closeMobileNav(); return false;" data-page="services">Travel Services</a></li>
     <li><a href="#" onclick="showPage('pricing'); closeMobileNav(); return false;" data-page="pricing">Pricing</a></li>
     <li><a href="#" onclick="showPage('itineraries'); closeMobileNav(); return false;" data-page="itineraries">Itineraries</a></li>
-    <li><a href="#" onclick="showPage('copywriting'); closeMobileNav(); return false;" data-page="copywriting">Copywriting</a></li>
     <li><a href="#" onclick="showPage('photos'); closeMobileNav(); return false;" data-page="photos">Travel Photos</a></li>
   </ul>
   <a href="#" onclick="showPage('contact'); return false;" class="nav-cta">Plan Your Trip</a>
@@ -817,7 +816,7 @@ function showPage(page) {
   document.body.style.overflow = '';
   const lb = document.getElementById('lightbox');
   if (lb) lb.classList.remove('active');
-  const pages = ['home', 'about', 'pricing', 'itineraries', 'photos', 'contact', 'services', 'copywriting'];
+  const pages = ['home', 'about', 'pricing', 'itineraries', 'photos', 'contact', 'services'];
   pages.forEach(p => {
     const el = document.getElementById('page-' + p);
     if (el) el.style.display = 'none';
@@ -870,8 +869,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-content">
-    <p class="hero-eyebrow">Fora-Certified Travel Advisor</p>
-    <h1 class="hero-headline">Travel advice from<br>someone who's<br>been there.</h1>
+    <h1 class="hero-headline">Travel advice from<br><span style="display:block;font-family:'DM Sans',sans-serif;font-size:0.22em;font-weight:300;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);font-style:normal;margin:0.5em 0 0.4em;text-align:center;">Fora-Certified Travel Advisor</span>someone who's<br>been there.</h1>
     <p class="hero-sub">Authentic, immersive trips, planned by someone who lives travel.</p>
     <a href="#" onclick="showPage('contact'); return false;" class="btn-primary" style="display:inline-block;margin-top:32px;">Plan Your Trip</a>
   </div>
@@ -921,7 +919,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
     <div class="service-card">
       <div class="service-num">02</div>
       <div class="service-name">Immersive Itineraries</div>
-      <p class="service-desc">These trips are built for travelers who want more than a highlights reel. Think small towns, slower days, and experiences shaped by local knowledge.</p>
+      <p class="service-desc">These trips are built for travelers who want more than a highlight reel. Think small towns, slower days, and experiences shaped by local knowledge.</p>
     </div>
     <div class="service-card">
       <div class="service-num">03</div>
@@ -1048,94 +1046,6 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
 </style>
 
 </div>
-
-
-<!-- PAGE: WRITING -->
-<div id="page-copywriting" style="display:none;">
-<section class="blog" style="padding: 120px 60px 80px;">
-  <div class="blog-header">
-    <div>
-      <p class="section-label" style="font-size:clamp(28px,4vw,48px);letter-spacing:-0.01em;text-transform:none;color:var(--accent);font-family:'Cormorant Garamond',serif;font-weight:300;margin-bottom:12px;display:block;">Copywriting</p>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.2vw,28px);font-weight:400;letter-spacing:0.01em;color:var(--charcoal);margin-bottom:16px;">Copy, content, and editorial work.</h2>
-      <p style="font-size:15px;color:var(--mid);max-width:600px;line-height:1.7;margin-bottom:32px;">I freelance as a copywriter and content creator for brands across travel, sports, and lifestyle. Below is a snapshot of what I offer.</p>
-      <div class="divider"></div>
-    </div>
-    <div></div>
-  </div>
-
-  <!-- Upwork credentials bar -->
-  <div class="copy-creds-bar" style="display:flex;gap:0;align-items:center;background:var(--warm-white);border:1px solid var(--border);padding:28px 40px;margin-bottom:56px;flex-wrap:wrap;">
-    <div style="margin-right:32px;">
-      <div style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);font-weight:600;">Upwork Freelancer Credentials :</div>
-    </div>
-    <div style="display:flex;gap:40px;align-items:center;flex-wrap:wrap;">
-      <div>
-        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--light);margin-bottom:4px;">Status</div>
-        <div style="font-size:14px;font-weight:400;color:var(--charcoal);">Top Rated Plus</div>
-      </div>
-      <div style="width:1px;height:36px;background:var(--border);"></div>
-      <div>
-        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--light);margin-bottom:4px;">Talent Rank</div>
-        <div style="font-size:14px;font-weight:400;color:var(--charcoal);">Top 3%</div>
-      </div>
-      <div style="width:1px;height:36px;background:var(--border);"></div>
-      <div>
-        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--light);margin-bottom:4px;">Job Success</div>
-        <div style="font-size:14px;font-weight:400;color:var(--charcoal);">100%</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Writing category cards -->
-  <div class="copy-grid-3" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;">
-    <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="blog-card">
-      <div class="blog-tag">Copywriting</div>
-      <div class="blog-title">Copywriting</div>
-      <p class="blog-excerpt">Website copy, destination content, and full website rewrites for travel brands. Written from firsthand experience across 30+ countries, with an emphasis on storytelling that feels informed, credible, and never like a brochure. Clients include B-Adventuras, DRIVUSO, and TWS Tennis Tours.</p>
-    </a>
-    <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="blog-card">
-      <div class="blog-tag">SEO Blogs</div>
-      <div class="blog-title">SEO Blog Writing</div>
-      <p class="blog-excerpt">Long-form blog posts for travel, lifestyle, and sports clients. Keyword research, proper structure, and content that's worth reading.</p>
-    </a>
-    <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="blog-card">
-      <div class="blog-tag">Travel Documents</div>
-      <div class="blog-title">Roadbooks &amp; Trip Documents</div>
-      <p class="blog-excerpt">Client-facing roadbooks and travel itineraries formatted for print and digital delivery. Written to be genuinely useful on the ground, not just visually polished.</p>
-    </a>
-  </div>
-
-  <div class="copy-grid-2" style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-    <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="blog-card">
-      <div class="blog-tag">Ads &amp; Social</div>
-      <div class="blog-title">Ad Copy &amp; Social Content</div>
-      <p class="blog-excerpt">Facebook, Instagram, and LinkedIn copy: paid ads, campaign management, and organic content. Includes creative direction and graphic production for travel brands.</p>
-    </a>
-    <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="blog-card">
-      <div class="blog-tag">Sports Writing</div>
-      <div class="blog-title">Sports Editorial &amp; Analysis</div>
-      <p class="blog-excerpt">News, analysis, and betting-focused content covering NBA, WNBA, NFL, and UFC. Built for volume and deadline-driven workflows.</p>
-    </a>
-  </div>
-
-  <div style="margin-top:48px;padding-top:40px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
-    <p style="font-size:14px;color:var(--mid);max-width:560px;">Available for travel copy, SEO blog posts, sports editorial, and ad copy. Hire directly through Upwork or get in touch below.</p>
-    <div style="display:flex;gap:16px;flex-wrap:wrap;">
-      <a href="https://www.upwork.com/freelancers/~019f2f88a80642e082?mp_source=share" target="_blank" rel="noopener" class="btn-secondary" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;padding:12px 24px;border:1px solid var(--border);color:var(--mid);text-decoration:none;display:inline-block;">Hire on Upwork</a>
-      <a href="#" onclick="showPage('contact'); return false;" class="btn-primary" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;padding:12px 24px;display:inline-block;">Get in Touch</a>
-    </div>
-  </div>
-</section>
-</div>
-
-<style>
-  @media (max-width: 900px) {
-    .copy-grid-3 { grid-template-columns: minmax(0,1fr) !important; }
-    .copy-grid-2 { grid-template-columns: minmax(0,1fr) !important; }
-    .copy-creds-bar { padding: 24px !important; }
-    .copy-creds-bar > div:first-child { margin-right: 0 !important; margin-bottom: 16px !important; }
-  }
-</style>
 
 <!-- PAGE: PHOTOS -->
 <div id="page-photos" style="display:none;">
