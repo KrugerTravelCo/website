@@ -802,6 +802,10 @@
 
 <script>
 function showPage(page) {
+  // Safety net: always clear any lingering scroll lock from the lightbox
+  document.body.style.overflow = '';
+  const lb = document.getElementById('lightbox');
+  if (lb) lb.classList.remove('active');
   const pages = ['home', 'about', 'pricing', 'itineraries', 'photos', 'contact', 'services', 'copywriting'];
   pages.forEach(p => {
     const el = document.getElementById('page-' + p);
@@ -1134,7 +1138,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
   </div>
 
   <!-- LIGHTBOX -->
-  <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(28,28,26,0.95);z-index:999;align-items:center;justify-content:center;cursor:pointer;">
+  <div id="lightbox" onclick="closeLightbox()" style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(28,28,26,0.95);z-index:999;align-items:center;justify-content:center;cursor:pointer;">
     <img id="lightbox-img" src="" style="max-width:90vw;max-height:90vh;object-fit:contain;display:block;" />
     <button onclick="lightboxNav(-1,event)" style="position:fixed;left:24px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--cream);font-size:32px;cursor:pointer;padding:16px;opacity:0.7;">&#8592;</button>
     <button onclick="lightboxNav(1,event)" style="position:fixed;right:24px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--cream);font-size:32px;cursor:pointer;padding:16px;opacity:0.7;">&#8594;</button>
