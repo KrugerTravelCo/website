@@ -95,6 +95,8 @@
   .hero-content {
     position: relative; z-index: 2;
     max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .hero-eyebrow {
@@ -126,7 +128,7 @@
     color: rgba(255,255,255,0.85);
     max-width: 480px;
     line-height: 1.75;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
   }
 
   .hero-cta {
@@ -869,8 +871,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-content">
-    <p class="hero-eyebrow">Fora-Certified Travel Advisor</p>
-    <h1 class="hero-headline">Travel advice from<br>someone who's<br>been there.</h1>
+    <h1 class="hero-headline" style="text-align:center;"><span style="display:block;font-family:'DM Sans',sans-serif;font-size:0.22em;font-weight:300;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);font-style:normal;margin-bottom:0.5em;">Fora-Certified Travel Advisor</span>Travel advice from<br>someone who's<br>been there.</h1>
     <p class="hero-sub">Authentic, immersive trips, planned by someone who lives travel.</p>
     <a href="#" onclick="showPage('contact'); return false;" class="btn-primary" style="display:inline-block;margin-top:32px;">Plan Your Trip</a>
   </div>
@@ -920,7 +921,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
     <div class="service-card">
       <div class="service-num">02</div>
       <div class="service-name">Immersive Itineraries</div>
-      <p class="service-desc">These trips are built for travelers who want more than a highlights reel. Think small towns, slower days, and experiences shaped by local knowledge.</p>
+      <p class="service-desc">These trips are built for travelers who want more than a highlight reel. Think small towns, slower days, and experiences shaped by local knowledge.</p>
     </div>
     <div class="service-card">
       <div class="service-num">03</div>
@@ -1029,7 +1030,7 @@ window.addEventListener('DOMContentLoaded', () => showPage('home'));
           <div class="divider"></div>
         </div>
       </div>
-      <p style="font-size:15px;color:var(--light);line-height:1.8;margin-bottom:24px;">In the past year alone, I've built itineraries across four continents: Italy, Croatia, Peru, Japan, Morocco, Portugal, Thailand, Colombia, Brazil, Chile, Poland, Albania, Georgia, France, Mexico, Canada, Indonesia, the Netherlands, and the United Kingdom. Some were two-week honeymoons. Some were quick long weekends. All of them were built from scratch around the specific traveler, not a template.</p>
+      <p style="font-size:15px;color:var(--light);line-height:1.8;margin-bottom:24px;">In the past year alone, I've built itineraries across four continents: Italy, Croatia, Peru, Japan, Morocco, Portugal, Thailand, Colombia, Brazil, Chile, Poland, Albania, Georgia, France, Mexico, Canada, Indonesia, the Netherlands, and the United Kingdom. Some were two-week honeymoons. Some were weeklong family vacations. Some were bucket-list adventures years in the making. All of them were built from scratch around the specific traveler, not a template.</p>
       <p style="font-size:15px;color:var(--light);line-height:1.8;margin-bottom:40px;">If you want to see what a real itinerary looks like before committing, reach out and I'll send you a sample from a destination you're considering. No obligation.</p>
       <a href="#" onclick="showPage('contact'); return false;" class="btn-primary" style="display:inline-block;background:var(--accent-secondary);">Request a Sample Itinerary</a>
     </div>
